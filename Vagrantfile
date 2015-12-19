@@ -25,7 +25,7 @@
   SQL_PORT = 33306
 
 # Allocate this amount of memory for the VM
-  MEMORY = "1024"
+  MEMORY = "2048"
 ################################################################################
 
 
