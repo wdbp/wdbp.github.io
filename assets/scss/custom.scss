@@ -1,0 +1,471 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* fonts
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* common or base font */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+$fontBasePrimary: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+/* secondary or print font */
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+$fontPrintPrimary: 'Arvo', Times, serif;
+
+/* font for script, cursive, or fancy rendering */
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+$fontFancyPrimary: 'Lobster';
+
+/* technical, typewriter, monospace font typically used for pre or code tags */
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+$fontMonoPrimary: 'Inconsolata', Courier, monospace;
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* colors
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* base white or black colors or variants */
+$colorLight: #fdfdfd; /*pale white*/
+$colorDark: #27343d; /*dark slate*/
+
+$colorPrimary: #4882ad; /*steel blue*/
+$colorSecondary: #ddd; /*gray*/ 
+$colorHighlightPrimary: #bf9000; /*medium yellow*/
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* resets
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  font-family: $fontBasePrimary;
+}
+
+body.body-navbar-padding {
+  /* bump for Bootstrap menu  navigation */
+   padding-top: 40px;   
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+p, ul, ol {
+  font-size: 20px;
+  font-family: $fontBasePrimary;
+  line-height: 24px;
+}
+
+/* links */
+a { color: $colorHighlightPrimary; }
+a:hover { color: $colorHighlightPrimary; }
+a:visited { color: $colorHighlightPrimary; }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Bootstrap overrides
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.container {
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.container-narrow {
+  width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0 18px 0 18px;
+}
+
+.row-stack {
+  padding: 12px 6px 12px 6px;
+  margin-bottom: 24px;
+  border: 0 none;
+}
+
+/* override to .col class padding */
+.cancel-col-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-default .navbar-brand {
+}
+
+.navbar-brand {
+  font-family: $fontFancyPrimary;
+  font-weight: 100;
+  font-size: 26px;
+}
+
+#nav-links {
+  font-family: $fontPrintPrimary;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+#footer {
+}
+
+.jumbotron {
+}
+
+.lead {
+}
+
+.page-header {
+}
+
+.navbar {
+}
+
+.navbar-default {
+}
+
+
+/*****************************************************************************/
+/* footer
+/*****************************************************************************/
+
+footer {
+  background: url(../img/footer.jpg) no-repeat center top;
+  background-attachment: relative;
+  background-position: top center;
+  min-height: 350px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 64px 0 48px;
+  color: $colorLight;
+}
+
+footer p, footer ul, footer ol, footer address {
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 0px;
+}
+
+#footer a {
+  color: $colorHighlightPrimary;
+}
+
+#footer-social a {
+  color: $colorLight;
+}
+
+#footer-links a {
+  color: $colorLight;
+}
+
+#footer-links .active a {
+  text-decoration: underline;
+}
+
+/*****************************************************************************/
+/* palettes
+/*****************************************************************************/
+
+.palette {}
+
+.palette h2 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+@media (max-width: 767px) {
+
+  .palette h2 {
+    font-size: 36px;
+    font-weight: 100;
+  }
+}
+
+.palette h3 {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+
+/*****************************************************************************/
+/* sections
+/*****************************************************************************/
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+section ul, section ol {
+  padding-left: 36px;
+}
+
+section h1 {
+  font-size: 48px;
+  font-weight: 100;
+  padding: 3px 0 20px 0;
+  font-family: $fontPrintPrimary;
+  text-transform: uppercase;
+}
+
+section h2 {}
+
+section h3 {}
+
+section h4 {}
+
+section h5 {}
+
+p.section-label {
+  padding: 8px;
+  font-size: 12px;
+  text-align: center;
+  font-family: $fontMonoPrimary;
+  background-color: lighten( $colorDark, 12% );
+  border: 1px dashed $colorDark;
+  color: $colorLight;
+}
+
+/*****************************************************************************/
+/* banners
+/*****************************************************************************/
+
+#hero-banner {
+  background: url(../img/hero.jpg) no-repeat center top;
+  background-attachment: relative;
+  background-position: top center;
+  background-color: $colorPrimary;
+  min-height: 600px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#hero-banner h1 {
+  font-size: 96px;
+  padding-top: 32px;
+  text-align: center;
+  font-weight: 800;
+  font-family: $fontPrintPrimary;
+  color: $colorLight;
+  text-transform: none;
+}
+
+@media (max-width: 767px) {
+  #hero-banner h1 {
+    font-size: 64px;
+  }
+}
+
+#hero-banner h2 {
+  padding: 24px;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 400;
+  font-family: $fontFancyPrimary;
+  color: $colorSecondary;
+  background-color: rgba( $colorDark, .8 );
+}
+
+@media (max-width: 767px) {
+  #hero-banner h2 {
+    font-size: 36px;
+  }
+}
+
+
+/*****************************************************************************/
+/* overrides
+/*****************************************************************************/
+
+.horizontal-padding-small {
+  padding: 8px 0 8px 0;
+}
+
+.horizontal-padding-medium {
+  padding: 24px 0 24px 0;
+}
+
+.horizontal-padding-large {
+  padding: 64px 0 64px 0;
+}
+
+.horizontal-padding-top-large {
+  padding-top: 64px;
+}
+
+.background-translucent {
+  background-color: rgba( $colorLight, 0.2);
+}
+
+.background-opaque {
+  background-color: rgba( $colorDark, 0.2);
+}
+
+.background-light {
+  background-color: $colorLight;
+  color: $colorDark;
+}
+
+.background-dark {
+  background-color: $colorDark;
+  color: $colorLight;
+}
+
+.background-primary {
+  background-color: $colorPrimary;
+}
+
+.background-primary-25 {
+  background-color: lighten( $colorPrimary, 25% );
+  color: $colorLight;
+}
+
+.background-primary-35 {
+  background-color: lighten( $colorPrimary, 35% );
+  color: $colorDark;
+}
+
+.background-primary-45 {
+  background-color: lighten( $colorPrimary, 45% );
+  color: $colorDark;
+}
+
+.background-primary-65 {
+  background-color: lighten( $colorPrimary, 65% );
+  color: $colorDark;
+}
+
+.background-primary-75 {
+  background-color: lighten( $colorPrimary, 75% );
+  color: $colorDark;
+}
+
+.single-border-top-primary {
+  border-top: 1px solid $colorPrimary;
+}
+
+.single-border-bottom-primary {
+  border-bottom: 1px solid $colorPrimary;
+}
+
+.text-indent {
+  padding-left: 24px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-light {
+  color: $colorLight;
+}
+
+.text-dark {
+  color: $colorDark;
+}
+
+.text-primary {
+  color: $colorPrimary;
+}
+
+.text-shadow-dark {
+  text-shadow: 1px 1px 1px $colorDark;
+}
+
+.text-shadow-primary {
+  text-shadow: 1px 1px 1px $colorPrimary;
+}
+
+.text-shadow-light {
+  text-shadow: 1px 1px 1px $colorLight;
+}
+
+.font-fancy {
+  font-family: $fontFancyPrimary;
+}
+
+.font-print {
+  font-family: $fontPrintPrimary;
+}
+
+.font-base {
+  font-family: $fontBasePrimary;
+}
+
+.font-mono {
+  font-family: $fontMonoPrimary;
+}
+
+.focused-block {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.hover-div a:hover {
+  color: $colorLight;
+}
+
+.hover-div:hover {
+ transition: background-color 0.8s ease;
+ background-color: rgba( $colorHighlightPrimary, .8 ); 
+}
+
+
+/*****************************************************************************/
+/* common responsive settings
+/*****************************************************************************/
+@media (max-width: 767px) {
+
+  .lead {
+    font-size: 22px;
+  }
+
+  section ul, section ol {
+    padding-left: 12px;
+  }
+
+  .container-narrow {
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0 18px 0 18px;
+  }
+}
