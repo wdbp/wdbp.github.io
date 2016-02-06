@@ -16,12 +16,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* colors
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* base white or black colors or variants */
-/*pale white*/
-/*dark slate*/
-/*steel blue*/
-/*gray*/
-/*medium yellow*/
+/* base monochrome colors or variants */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* resets
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -36,11 +31,11 @@ body.body-navbar-padding { /* bump for Bootstrap menu  navigation */ padding-top
 p, ul, ol { font-size: 20px; font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; line-height: 24px; }
 
 /* links */
-a { color: #bf9000; }
+a { color: #42dca3; }
 
-a:hover { color: #bf9000; }
+a:hover { color: #20ac78; }
 
-a:visited { color: #bf9000; }
+a:visited { color: #42dca3; }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Bootstrap overrides
@@ -56,9 +51,11 @@ a:visited { color: #bf9000; }
 /* override to .col class padding */
 .cancel-col-padding { padding-left: 0px; padding-right: 0px; }
 
+.navbar-inverse { background-color: #000011; border-color: #000011; }
+
 .navbar-brand { font-weight: 100; font-size: 26px; }
 
-#nav-links { font-family: "Bitter", Times, serif; font-size: 14px; font-weight: 100; }
+#nav-links { font-size: 14px; font-weight: 100; }
 
 /*****************************************************************************/
 /* footer
@@ -67,7 +64,7 @@ footer { background-attachment: relative; background-position: top center; min-h
 
 footer p, footer ul, footer ol, footer address { font-size: 18px; line-height: 22px; padding-left: 0px; }
 
-#footer a { color: #bf9000; }
+#footer a { color: #42dca3; }
 
 #footer-social a { color: #fdfdfd; }
 
@@ -92,17 +89,21 @@ section ul, section ol { padding-left: 36px; }
 
 section h1 { font-size: 48px; font-weight: 100; padding: 3px 0 20px 0; font-family: "Bitter", Times, serif; text-transform: uppercase; }
 
-p.section-label { padding: 8px; font-size: 12px; text-align: center; font-family: "Inconsolata", Courier, monospace; background-color: #3f5462; border: 1px dashed #27343d; color: #fdfdfd; }
+p.section-label { padding: 8px; font-size: 12px; text-align: center; font-family: "Inconsolata", Courier, monospace; background-color: #00004e; border: 1px dashed #000011; color: #fdfdfd; }
 
 /*****************************************************************************/
 /* banners
 /*****************************************************************************/
-#hero-banner { background-attachment: relative; background-position: top center; background-color: #4882ad; min-height: 600px; width: 100%; -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#page-header-banner { background-color: #000030; padding: 4em 0 4em; min-height: 16em; }
+
+#page-header-banner h1 { text-align: center; text-transform: uppercase; font-size: 3.4em; color: #fdfdfd; }
+
+#hero-banner { background-attachment: relative; background-position: top center; background-color: #000030; min-height: 600px; width: 100%; -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 #hero-banner h1 { font-size: 96px; padding-top: 32px; text-align: center; font-weight: 800; font-family: "Bitter", Times, serif; color: #fdfdfd; text-transform: none; }
 
 @media (max-width: 767px) { #hero-banner h1 { font-size: 64px; } }
-#hero-banner h2 { padding: 24px; font-size: 48px; text-align: center; font-weight: 400; color: #ddd; background-color: rgba(39, 52, 61, 0.8); }
+#hero-banner h2 { padding: 24px; font-size: 48px; text-align: center; font-weight: 400; color: white; background-color: #000044; }
 
 @media (max-width: 767px) { #hero-banner h2 { font-size: 36px; } }
 /*****************************************************************************/
@@ -118,27 +119,27 @@ p.section-label { padding: 8px; font-size: 12px; text-align: center; font-family
 
 .background-translucent { background-color: rgba(253, 253, 253, 0.2); }
 
-.background-opaque { background-color: rgba(39, 52, 61, 0.2); }
+.background-opaque { background-color: rgba(0, 0, 17, 0.2); }
 
-.background-light { background-color: #fdfdfd; color: #27343d; }
+.background-light { background-color: #fdfdfd; color: #000011; }
 
-.background-dark { background-color: #27343d; color: #fdfdfd; }
+.background-dark { background-color: #000011; color: #fdfdfd; }
 
-.background-primary { background-color: #4882ad; }
+.background-primary { background-color: #000030; }
 
-.background-primary-25 { background-color: #9ebed7; color: #fdfdfd; }
+.background-primary-25 { background-color: #0000af; color: #fdfdfd; }
 
-.background-primary-35 { background-color: #c2d6e6; color: #27343d; }
+.background-primary-35 { background-color: #0000e2; color: #000011; }
 
-.background-primary-45 { background-color: #e6eef5; color: #27343d; }
+.background-primary-45 { background-color: #1616ff; color: #000011; }
 
-.background-primary-65 { background-color: white; color: #27343d; }
+.background-primary-65 { background-color: #7c7cff; color: #000011; }
 
-.background-primary-75 { background-color: white; color: #27343d; }
+.background-primary-75 { background-color: #afafff; color: #000011; }
 
-.single-border-top-primary { border-top: 1px solid #4882ad; }
+.single-border-top-primary { border-top: 1px solid #000030; }
 
-.single-border-bottom-primary { border-bottom: 1px solid #4882ad; }
+.single-border-bottom-primary { border-bottom: 1px solid #000030; }
 
 .text-indent { padding-left: 24px; }
 
@@ -148,13 +149,13 @@ p.section-label { padding: 8px; font-size: 12px; text-align: center; font-family
 
 .text-light { color: #fdfdfd; }
 
-.text-dark { color: #27343d; }
+.text-dark { color: #000011; }
 
-.text-primary { color: #4882ad; }
+.text-primary { color: #000030; }
 
-.text-shadow-dark { text-shadow: 1px 1px 1px #27343d; }
+.text-shadow-dark { text-shadow: 1px 1px 1px #000011; }
 
-.text-shadow-primary { text-shadow: 1px 1px 1px #4882ad; }
+.text-shadow-primary { text-shadow: 1px 1px 1px #000030; }
 
 .text-shadow-light { text-shadow: 1px 1px 1px #fdfdfd; }
 
@@ -168,7 +169,7 @@ p.section-label { padding: 8px; font-size: 12px; text-align: center; font-family
 
 .hover-div a:hover { color: #fdfdfd; }
 
-.hover-div:hover { transition: background-color 0.8s ease; background-color: rgba(191, 144, 0, 0.8); }
+.hover-div:hover { transition: background-color 0.8s ease; background-color: rgba(66, 220, 163, 0.8); }
 
 /*****************************************************************************/
 /* common responsive settings

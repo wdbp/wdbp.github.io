@@ -26,13 +26,13 @@ $fontMonoPrimary: 'Inconsolata', Courier, monospace;
 /* colors
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* base white or black colors or variants */
-$colorLight: #fdfdfd; /*pale white*/
-$colorDark: #27343d; /*dark slate*/
+/* base monochrome colors or variants */
+$colorBaseLight: #fdfdfd;
+$colorBaseDark: rgb(0, 0, 17);
 
-$colorPrimary: #4882ad; /*steel blue*/
-$colorSecondary: #ddd; /*gray*/
-$colorHighlightPrimary: #bf9000; /*medium yellow*/
+$colorPrimary: lighten( $colorBaseDark, 6% );
+$colorSecondary: lighten( $colorBaseLight, 6% );
+$colorHighlightPrimary: #42dca3;
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -66,7 +66,7 @@ p, ul, ol {
 
 /* links */
 a { color: $colorHighlightPrimary; }
-a:hover { color: $colorHighlightPrimary; }
+a:hover { color: darken( $colorHighlightPrimary, 16% ); }
 a:visited { color: $colorHighlightPrimary; }
 
 
@@ -112,13 +112,17 @@ a:visited { color: $colorHighlightPrimary; }
 .navbar-default .navbar-brand {
 }
 
+.navbar-inverse {
+  background-color: $colorBaseDark;
+  border-color: $colorBaseDark;
+}
+
 .navbar-brand {
   font-weight: 100;
   font-size: 26px;
 }
 
 #nav-links {
-  font-family: $fontPrintPrimary;
   font-size: 14px;
   font-weight: 100;
 }
@@ -130,9 +134,6 @@ a:visited { color: $colorHighlightPrimary; }
 }
 
 .lead {
-}
-
-.page-header {
 }
 
 .navbar {
@@ -161,7 +162,7 @@ footer {
   -o-background-size: cover;
   background-size: cover;
   padding: 64px 0 48px;
-  color: $colorLight;
+  color: $colorBaseLight;
 }
 
 footer p, footer ul, footer ol, footer address {
@@ -175,11 +176,11 @@ footer p, footer ul, footer ol, footer address {
 }
 
 #footer-social a {
-  color: $colorLight;
+  color: $colorBaseLight;
 }
 
 #footer-links a {
-  color: $colorLight;
+  color: $colorBaseLight;
 }
 
 #footer-links .active a {
@@ -245,14 +246,27 @@ p.section-label {
   font-size: 12px;
   text-align: center;
   font-family: $fontMonoPrimary;
-  background-color: lighten( $colorDark, 12% );
-  border: 1px dashed $colorDark;
-  color: $colorLight;
+  background-color: lighten( $colorBaseDark, 12% );
+  border: 1px dashed $colorBaseDark;
+  color: $colorBaseLight;
 }
 
 /*****************************************************************************/
 /* banners
 /*****************************************************************************/
+
+#page-header-banner {
+    background-color: $colorPrimary;
+    padding: 4em 0 4em;
+    min-height: 16em;
+}
+
+#page-header-banner h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.4em;
+    color: $colorBaseLight;
+}
 
 #hero-banner {
   // background: url(../img/hero.jpg) no-repeat center top;
@@ -277,7 +291,7 @@ p.section-label {
   text-align: center;
   font-weight: 800;
   font-family: $fontPrintPrimary;
-  color: $colorLight;
+  color: $colorBaseLight;
   text-transform: none;
 }
 
@@ -293,7 +307,7 @@ p.section-label {
   text-align: center;
   font-weight: 400;
   color: $colorSecondary;
-  background-color: rgba( $colorDark, .8 );
+  background-color: lighten( $colorBaseDark, 10% );
 }
 
 @media (max-width: 767px) {
@@ -324,21 +338,21 @@ p.section-label {
 }
 
 .background-translucent {
-  background-color: rgba( $colorLight, 0.2);
+  background-color: rgba( $colorBaseLight, 0.2);
 }
 
 .background-opaque {
-  background-color: rgba( $colorDark, 0.2);
+  background-color: rgba( $colorBaseDark, 0.2);
 }
 
 .background-light {
-  background-color: $colorLight;
-  color: $colorDark;
+  background-color: $colorBaseLight;
+  color: $colorBaseDark;
 }
 
 .background-dark {
-  background-color: $colorDark;
-  color: $colorLight;
+  background-color: $colorBaseDark;
+  color: $colorBaseLight;
 }
 
 .background-primary {
@@ -347,27 +361,27 @@ p.section-label {
 
 .background-primary-25 {
   background-color: lighten( $colorPrimary, 25% );
-  color: $colorLight;
+  color: $colorBaseLight;
 }
 
 .background-primary-35 {
   background-color: lighten( $colorPrimary, 35% );
-  color: $colorDark;
+  color: $colorBaseDark;
 }
 
 .background-primary-45 {
   background-color: lighten( $colorPrimary, 45% );
-  color: $colorDark;
+  color: $colorBaseDark;
 }
 
 .background-primary-65 {
   background-color: lighten( $colorPrimary, 65% );
-  color: $colorDark;
+  color: $colorBaseDark;
 }
 
 .background-primary-75 {
   background-color: lighten( $colorPrimary, 75% );
-  color: $colorDark;
+  color: $colorBaseDark;
 }
 
 .single-border-top-primary {
@@ -391,11 +405,11 @@ p.section-label {
 }
 
 .text-light {
-  color: $colorLight;
+  color: $colorBaseLight;
 }
 
 .text-dark {
-  color: $colorDark;
+  color: $colorBaseDark;
 }
 
 .text-primary {
@@ -403,7 +417,7 @@ p.section-label {
 }
 
 .text-shadow-dark {
-  text-shadow: 1px 1px 1px $colorDark;
+  text-shadow: 1px 1px 1px $colorBaseDark;
 }
 
 .text-shadow-primary {
@@ -411,7 +425,7 @@ p.section-label {
 }
 
 .text-shadow-light {
-  text-shadow: 1px 1px 1px $colorLight;
+  text-shadow: 1px 1px 1px $colorBaseLight;
 }
 
 .font-print {
@@ -432,7 +446,7 @@ p.section-label {
 }
 
 .hover-div a:hover {
-  color: $colorLight;
+  color: $colorBaseLight;
 }
 
 .hover-div:hover {
