@@ -1,4 +1,11 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* This is the custom override CSS. */
+/* Edit sass/custom.scss and compile with SASS. */
+/* Ex command: */
+/* sass assets/scss/custom.scss:assets/css/custom.css --style compact         */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* fonts
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -28,7 +35,7 @@ $colorLight: #fdfdfd; /*pale white*/
 $colorDark: #27343d; /*dark slate*/
 
 $colorPrimary: #4882ad; /*steel blue*/
-$colorSecondary: #ddd; /*gray*/ 
+$colorSecondary: #ddd; /*gray*/
 $colorHighlightPrimary: #bf9000; /*medium yellow*/
 
 
@@ -49,7 +56,7 @@ body {
 
 body.body-navbar-padding {
   /* bump for Bootstrap menu  navigation */
-   padding-top: 40px;   
+   padding-top: 40px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -440,7 +447,7 @@ p.section-label {
 
 .hover-div:hover {
  transition: background-color 0.8s ease;
- background-color: rgba( $colorHighlightPrimary, .8 ); 
+ background-color: rgba( $colorHighlightPrimary, .8 );
 }
 
 
