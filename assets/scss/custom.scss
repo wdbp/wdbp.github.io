@@ -14,12 +14,8 @@
 $fontBasePrimary: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 
 /* secondary or print font */
-@import url(http://fonts.googleapis.com/css?family=Arvo);
-$fontPrintPrimary: 'Arvo', Times, serif;
-
-/* font for script, cursive, or fancy rendering */
-@import url(http://fonts.googleapis.com/css?family=Lobster);
-$fontFancyPrimary: 'Lobster';
+@import url(http://fonts.googleapis.com/css?family=Bitter);
+$fontPrintPrimary: 'Bitter', Times, serif;
 
 /* technical, typewriter, monospace font typically used for pre or code tags */
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
@@ -117,7 +113,6 @@ a:visited { color: $colorHighlightPrimary; }
 }
 
 .navbar-brand {
-  font-family: $fontFancyPrimary;
   font-weight: 100;
   font-size: 26px;
 }
@@ -152,7 +147,7 @@ a:visited { color: $colorHighlightPrimary; }
 /*****************************************************************************/
 
 footer {
-  background: url(../img/footer.jpg) no-repeat center top;
+  // background: url(../img/footer.jpg) no-repeat center top;
   background-attachment: relative;
   background-position: top center;
   min-height: 350px;
@@ -260,7 +255,7 @@ p.section-label {
 /*****************************************************************************/
 
 #hero-banner {
-  background: url(../img/hero.jpg) no-repeat center top;
+  // background: url(../img/hero.jpg) no-repeat center top;
   background-attachment: relative;
   background-position: top center;
   background-color: $colorPrimary;
@@ -297,7 +292,6 @@ p.section-label {
   font-size: 48px;
   text-align: center;
   font-weight: 400;
-  font-family: $fontFancyPrimary;
   color: $colorSecondary;
   background-color: rgba( $colorDark, .8 );
 }
@@ -418,10 +412,6 @@ p.section-label {
 
 .text-shadow-light {
   text-shadow: 1px 1px 1px $colorLight;
-}
-
-.font-fancy {
-  font-family: $fontFancyPrimary;
 }
 
 .font-print {

@@ -10,9 +10,7 @@
 /* common or base font */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /* secondary or print font */
-@import url(http://fonts.googleapis.com/css?family=Arvo);
-/* font for script, cursive, or fancy rendering */
-@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Bitter);
 /* technical, typewriter, monospace font typically used for pre or code tags */
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -58,14 +56,14 @@ a:visited { color: #bf9000; }
 /* override to .col class padding */
 .cancel-col-padding { padding-left: 0px; padding-right: 0px; }
 
-.navbar-brand { font-family: "Lobster"; font-weight: 100; font-size: 26px; }
+.navbar-brand { font-weight: 100; font-size: 26px; }
 
-#nav-links { font-family: "Arvo", Times, serif; font-size: 14px; font-weight: 100; }
+#nav-links { font-family: "Bitter", Times, serif; font-size: 14px; font-weight: 100; }
 
 /*****************************************************************************/
 /* footer
 /*****************************************************************************/
-footer { background: url(../img/footer.jpg) no-repeat center top; background-attachment: relative; background-position: top center; min-height: 350px; width: 100%; -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 64px 0 48px; color: #fdfdfd; }
+footer { background-attachment: relative; background-position: top center; min-height: 350px; width: 100%; -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 64px 0 48px; color: #fdfdfd; }
 
 footer p, footer ul, footer ol, footer address { font-size: 18px; line-height: 22px; padding-left: 0px; }
 
@@ -92,19 +90,19 @@ section { margin: 0; padding: 0; }
 
 section ul, section ol { padding-left: 36px; }
 
-section h1 { font-size: 48px; font-weight: 100; padding: 3px 0 20px 0; font-family: "Arvo", Times, serif; text-transform: uppercase; }
+section h1 { font-size: 48px; font-weight: 100; padding: 3px 0 20px 0; font-family: "Bitter", Times, serif; text-transform: uppercase; }
 
 p.section-label { padding: 8px; font-size: 12px; text-align: center; font-family: "Inconsolata", Courier, monospace; background-color: #3f5462; border: 1px dashed #27343d; color: #fdfdfd; }
 
 /*****************************************************************************/
 /* banners
 /*****************************************************************************/
-#hero-banner { background: url(../img/hero.jpg) no-repeat center top; background-attachment: relative; background-position: top center; background-color: #4882ad; min-height: 600px; width: 100%; -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#hero-banner { background-attachment: relative; background-position: top center; background-color: #4882ad; min-height: 600px; width: 100%; -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
-#hero-banner h1 { font-size: 96px; padding-top: 32px; text-align: center; font-weight: 800; font-family: "Arvo", Times, serif; color: #fdfdfd; text-transform: none; }
+#hero-banner h1 { font-size: 96px; padding-top: 32px; text-align: center; font-weight: 800; font-family: "Bitter", Times, serif; color: #fdfdfd; text-transform: none; }
 
 @media (max-width: 767px) { #hero-banner h1 { font-size: 64px; } }
-#hero-banner h2 { padding: 24px; font-size: 48px; text-align: center; font-weight: 400; font-family: "Lobster"; color: #ddd; background-color: rgba(39, 52, 61, 0.8); }
+#hero-banner h2 { padding: 24px; font-size: 48px; text-align: center; font-weight: 400; color: #ddd; background-color: rgba(39, 52, 61, 0.8); }
 
 @media (max-width: 767px) { #hero-banner h2 { font-size: 36px; } }
 /*****************************************************************************/
@@ -160,9 +158,7 @@ p.section-label { padding: 8px; font-size: 12px; text-align: center; font-family
 
 .text-shadow-light { text-shadow: 1px 1px 1px #fdfdfd; }
 
-.font-fancy { font-family: "Lobster"; }
-
-.font-print { font-family: "Arvo", Times, serif; }
+.font-print { font-family: "Bitter", Times, serif; }
 
 .font-base { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; }
 
