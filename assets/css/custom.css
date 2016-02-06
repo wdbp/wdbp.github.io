@@ -8,7 +8,7 @@
 /* fonts
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* common or base font */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,300);
 /* secondary or print font */
 @import url(http://fonts.googleapis.com/css?family=Bitter);
 /* technical, typewriter, monospace font typically used for pre or code tags */
@@ -28,7 +28,7 @@ body { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; }
 
 body.body-navbar-padding { /* bump for Bootstrap menu  navigation */ padding-top: 40px; }
 
-p, ul, ol { font-size: 20px; font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; line-height: 24px; }
+p, ul, ol { font-size: 1.5em; font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; font-weight: 100; line-height: 2em; }
 
 /* links */
 a { color: #42dca3; }
@@ -57,10 +57,20 @@ a:visited { color: #42dca3; }
 
 #nav-links { font-size: 14px; font-weight: 100; }
 
+pre { display: block; padding: 9.5px; margin: 0 0 10px; font-size: 13px; line-height: 1.42857143; color: #c5c5c5; word-break: break-all; word-wrap: break-word; background-color: #fdfdfd; border: none; border-left: 20px solid #d7d7d7; border-radius: 0px; overflow-x: auto; font-family: "Inconsolata", Courier, monospace; }
+
+.btn { display: inline-block; padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: 400; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 0px; }
+
+.btn-default { color: #000030; background-color: #cfcfcf; border-color: #9c9c9c; }
+
+.btn-default:visited, .btn-default:active { color: #000030; background-color: #cfcfcf; border-color: #9c9c9c; }
+
+.btn-default:hover { background-color: #42dca3; border-color: #0e4e36; }
+
 /*****************************************************************************/
 /* footer
 /*****************************************************************************/
-footer { background-attachment: relative; background-position: top center; min-height: 350px; width: 100%; -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 64px 0 48px; color: #fdfdfd; }
+footer { background-color: #000030; background-image: linear-gradient(#000030, #000011); width: 100%; padding: 12em 0 10em; color: #fdfdfd; }
 
 footer p, footer ul, footer ol, footer address { font-size: 18px; line-height: 22px; padding-left: 0px; }
 
@@ -83,7 +93,7 @@ footer p, footer ul, footer ol, footer address { font-size: 18px; line-height: 2
 /*****************************************************************************/
 /* sections
 /*****************************************************************************/
-section { margin: 0; padding: 0; }
+section { margin: 5em 0 5em; }
 
 section ul, section ol { padding-left: 36px; }
 
@@ -94,11 +104,11 @@ p.section-label { padding: 8px; font-size: 12px; text-align: center; font-family
 /*****************************************************************************/
 /* banners
 /*****************************************************************************/
-#page-header-banner { background-color: #000030; padding: 4em 0 4em; min-height: 16em; }
+#page-header-banner { background-color: #000030; background-image: linear-gradient(#000011, #000030); padding: 4em 0 4em; min-height: 16em; }
 
-#page-header-banner h1 { text-align: center; text-transform: uppercase; font-size: 3.4em; color: #fdfdfd; }
+#page-header-banner h1 { text-align: center; text-transform: uppercase; font-size: 3.4em; font-weight: 700; color: #fdfdfd; }
 
-#hero-banner { background-attachment: relative; background-position: top center; background-color: #000030; min-height: 600px; width: 100%; -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#hero-banner { background-color: #000030; background-image: linear-gradient(#000011, #000030); min-height: 600px; width: 100%; background-size: cover; }
 
 #hero-banner h1 { font-size: 96px; padding-top: 32px; text-align: center; font-weight: 800; font-family: "Bitter", Times, serif; color: #fdfdfd; text-transform: none; }
 

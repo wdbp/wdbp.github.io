@@ -10,7 +10,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* common or base font */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,300);
 $fontBasePrimary: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 
 /* secondary or print font */
@@ -59,16 +59,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol {
-  font-size: 20px;
+  font-size: 1.5em;
   font-family: $fontBasePrimary;
-  line-height: 24px;
+  font-weight: 100;
+  line-height: 2em;
 }
 
 /* links */
 a { color: $colorHighlightPrimary; }
 a:hover { color: darken( $colorHighlightPrimary, 16% ); }
 a:visited { color: $colorHighlightPrimary; }
-
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Bootstrap overrides
@@ -142,26 +142,70 @@ a:visited { color: $colorHighlightPrimary; }
 .navbar-default {
 }
 
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: darken( $colorBaseLight, 22% );
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: $colorBaseLight;
+    border: none;
+    border-left: 20px solid darken( $colorBaseLight, 15% );
+    border-radius: 0px;
+    overflow-x: auto;
+    font-family: $fontMonoPrimary;
+}
 
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+.btn-default {
+    color: $colorPrimary;
+    background-color: darken( $colorBaseLight, 18% );
+    border-color: darken( $colorBaseLight, 38% );
+}
+
+.btn-default:visited, .btn-default:active {
+    color: $colorPrimary;
+    background-color: darken( $colorBaseLight, 18% );
+    border-color: darken( $colorBaseLight, 38% );
+}
+
+.btn-default:hover {
+    background-color: $colorHighlightPrimary;
+    border-color: darken( $colorHighlightPrimary, 38% );
+}
 /*****************************************************************************/
 /* footer
 /*****************************************************************************/
 
 footer {
-  // background: url(../img/footer.jpg) no-repeat center top;
-  background-attachment: relative;
-  background-position: top center;
-  min-height: 350px;
+  background-color: lighten( $colorBaseDark, 6% );
+  background-image: linear-gradient(lighten( $colorBaseDark, 6% ), $colorBaseDark);
   width: 100%;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 64px 0 48px;
+  padding: 12em 0 10em;
   color: $colorBaseLight;
 }
 
@@ -217,8 +261,7 @@ footer p, footer ul, footer ol, footer address {
 /*****************************************************************************/
 
 section {
-  margin: 0;
-  padding: 0;
+  margin: 5em 0 5em;
 }
 
 section ul, section ol {
@@ -257,6 +300,7 @@ p.section-label {
 
 #page-header-banner {
     background-color: $colorPrimary;
+    background-image: linear-gradient( $colorBaseDark, lighten( $colorBaseDark, 6% ) );
     padding: 4em 0 4em;
     min-height: 16em;
 }
@@ -265,24 +309,16 @@ p.section-label {
     text-align: center;
     text-transform: uppercase;
     font-size: 3.4em;
+    font-weight: 700;
     color: $colorBaseLight;
 }
 
 #hero-banner {
-  // background: url(../img/hero.jpg) no-repeat center top;
-  background-attachment: relative;
-  background-position: top center;
-  background-color: $colorPrimary;
-  min-height: 600px;
-  width: 100%;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-color: $colorPrimary;
+    background-image: linear-gradient( $colorBaseDark, lighten( $colorBaseDark, 6% ) );
+    min-height: 600px;
+    width: 100%;
+    background-size: cover;
 }
 
 #hero-banner h1 {
