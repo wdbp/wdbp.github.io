@@ -3,6 +3,7 @@ email: ""
 description: ""
 baseurl: ""
 url: "http://yourdomain.com"
+repo: "https://github.com/dereknutile/best-practices"
 
 # twitter_username: jekyllrb
 # github_username:  jekyll
