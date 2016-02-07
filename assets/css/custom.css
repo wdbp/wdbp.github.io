@@ -33,7 +33,7 @@ p, ul, ol { font-size: 1.5em; font-family: "Source Sans Pro", Helvetica, Arial, 
 /* links */
 a { color: #42dca3; }
 
-a:hover { color: #20ac78; }
+a:hover { transition: background-color 0.9s ease; color: #167954; text-decoration: none; }
 
 a:visited { color: #42dca3; }
 
@@ -57,7 +57,15 @@ a:visited { color: #42dca3; }
 
 #nav-links { font-size: 14px; font-weight: 100; }
 
-pre { display: block; padding: 9.5px; margin: 0 0 10px; font-size: 13px; line-height: 1.42857143; color: #c5c5c5; word-break: break-all; word-wrap: break-word; background-color: #fdfdfd; border: none; border-left: 20px solid #d7d7d7; border-radius: 0px; overflow-x: auto; font-family: "Inconsolata", Courier, monospace; }
+.dropdown-menu { position: absolute; top: 100%; left: 0; z-index: 1000; display: none; float: left; min-width: 160px; padding: 5px 0; margin: 2px 0 0; font-size: 14px; text-align: left; list-style: none; background-color: #fdfdfd; -webkit-background-clip: padding-box; background-clip: padding-box; border: 1px solid #000030; border-radius: 0px; -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
+
+ul.dropdown-menu > li > a:hover { color: #fdfdfd; background-color: #000030; }
+
+figure { margin-bottom: 2em; }
+
+pre { display: block; padding: 0.7em; margin: 0; font-size: 0.9em; line-height: 1.42857143; color: #00006d; word-break: break-all; word-wrap: break-word; background-color: #e4e4e4; border: none; border-left: 1.5em solid #bdbdbd; border-radius: 0px; overflow-x: auto; font-family: "Inconsolata", Courier, monospace; font-weight: 100; }
+
+.pre-title { margin-top: 1em; padding: 1.0em 0 1em 1.4em; font-size: 1.1em; font-family: "Inconsolata", Courier, monospace; font-weight: 700; background-color: #a4a4a4; }
 
 .btn { display: inline-block; padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: 400; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 0px; }
 
@@ -93,21 +101,34 @@ footer p, footer ul, footer ol, footer address { font-size: 18px; line-height: 2
 /*****************************************************************************/
 /* sections
 /*****************************************************************************/
-section { margin: 5em 0 5em; }
+section { margin: 2em 0 4em; }
 
 section ul, section ol { padding-left: 36px; }
 
 section h1 { font-size: 48px; font-weight: 100; padding: 3px 0 20px 0; font-family: "Bitter", Times, serif; text-transform: uppercase; }
+
+section h2 { font-size: 2.2em; font-family: "Bitter", Times, serif; margin-bottom: .8em; padding-bottom: .5em; border-bottom: 1px solid #000058; }
 
 p.section-label { padding: 8px; font-size: 12px; text-align: center; font-family: "Inconsolata", Courier, monospace; background-color: #00004e; border: 1px dashed #000011; color: #fdfdfd; }
 
 /*****************************************************************************/
 /* banners
 /*****************************************************************************/
-#page-header-banner { background-color: #000030; background-image: linear-gradient(#000011, #000030); padding: 4em 0 4em; min-height: 16em; }
+#page-header-banner { background-color: #000030; background-image: linear-gradient(#000011, #00003f); padding: 4em 0 4em; min-height: 16em; }
 
-#page-header-banner h1 { text-align: center; text-transform: uppercase; font-size: 3.4em; font-weight: 700; color: #fdfdfd; }
+#page-header-banner h1 { text-align: center; text-transform: uppercase; font-size: 5em; font-weight: 700; color: #fdfdfd; font-family: "Bitter", Times, serif; }
 
+#toc-banner { background-color: #3030ff; background-image: linear-gradient(#0000af, #3030ff); padding: 2em 0 5em; min-height: 10em; }
+
+#toc-banner h2 { font-weight: 700; color: #fdfdfd; }
+
+.toc-list { padding-left: 0; list-style: none; font-size: 1.2em; line-height: 1.8em; }
+
+.col { word-break: break-word; float: left; margin: 0; width: 24%; border-right: none; }
+
+@media (max-width: 767px) { .col { width: 50%; float: left; vertical-align: top; padding-left: .8em; border-bottom: 1px dotted #0000af; } }
+@media (max-width: 480px) { .col { width: 100%; float: left; vertical-align: top; border-right: none; border-bottom: 1px dotted #0000af; } }
+@media (max-width: 767px) { #hero-banner h1 { font-size: 3em; } }
 #hero-banner { background-color: #000030; background-image: linear-gradient(#000011, #000030); min-height: 600px; width: 100%; background-size: cover; }
 
 #hero-banner h1 { font-size: 96px; padding-top: 32px; text-align: center; font-weight: 800; font-family: "Bitter", Times, serif; color: #fdfdfd; text-transform: none; }
