@@ -5,45 +5,20 @@
             <div class="row">
 
                 <h2 class="text-shadow-primary">Table of Contents</h2>
-                <div class="col">
-                    <h3 class="text-shadow-dark"><a href="#top">Introduction</a></h3>
-                    <ul class="toc-list">
-                        <li><a href="#audience">Audience</a></li>
-                        <li><a href="#goal">Goal</a></li>
-                        <li><a href="#philosophy">Philosophy</a></li>
-                        <li><a href="#contributing">Contributing</a></li>
-                    </ul>
-                </div>
 
+                {% for content in site.data.contents %}
                 <div class="col">
-                    <h3 class="text-shadow-dark"><a href="#top">Introduction</a></h3>
-                    <ul class="toc-list">
-                        <li><a href="#audience">Audience</a></li>
-                        <li><a href="#goal">Goal</a></li>
-                        <li><a href="#philosophy">Philosophy</a></li>
-                        <li><a href="#contributing">Contributing</a></li>
-                    </ul>
-                </div>
+                <h3 class="text-shadow-dark"><a href="/{{ content.url }}">{{ content.item }}</a></h3>
 
-                <div class="col">
-                    <h3 class="text-shadow-dark"><a href="#top">Introduction</a></h3>
+                    {% if content.bookmarks %}
                     <ul class="toc-list">
-                        <li><a href="#audience">Audience</a></li>
-                        <li><a href="#goal">Goal</a></li>
-                        <li><a href="#philosophy">Philosophy</a></li>
-                        <li><a href="#contributing">Contributing</a></li>
+                        {% for bookmark in content.bookmarks %}
+                            <li><a href="/{{ content.url }}/{{ bookmark.url }}">{{ bookmark.name }}</a></li>
+                        {% endfor %}
                     </ul>
-                </div>
-
-                <div class="col">
-                    <h3 class="text-shadow-dark"><a href="#top">Introduction</a></h3>
-                    <ul class="toc-list">
-                        <li><a href="#audience">Audience</a></li>
-                        <li><a href="#goal">Goal</a></li>
-                        <li><a href="#philosophy">Philosophy</a></li>
-                        <li><a href="#contributing">Contributing</a></li>
-                    </ul>
-                </div>
+                    {% endif %}
+                </div><!-- .col -->
+                {% endfor %}
             </div><!-- /.row -->
         </div><!-- /.container -->
 
