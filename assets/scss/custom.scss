@@ -386,10 +386,11 @@ p.section-label {
 
 .col {
     word-break: break-word;
-    float: left;
     margin: 0;
     width: 24%;
     border-right: none;
+    display: inline-block;
+    vertical-align: top;
 }
 
 @media (max-width: 767px) {

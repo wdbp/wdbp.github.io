@@ -124,7 +124,7 @@ p.section-label { padding: 8px; font-size: 12px; text-align: center; font-family
 
 .toc-list { padding-left: 0; list-style: none; font-size: 1.2em; line-height: 1.8em; }
 
-.col { word-break: break-word; float: left; margin: 0; width: 24%; border-right: none; }
+.col { word-break: break-word; margin: 0; width: 25%; border-right: none; display: inline-block; vertical-align: top; }
 
 @media (max-width: 767px) { .col { width: 50%; float: left; vertical-align: top; padding-left: .8em; border-bottom: 1px dotted #0000af; } }
 @media (max-width: 480px) { .col { width: 100%; float: left; vertical-align: top; border-right: none; border-bottom: 1px dotted #0000af; } }
