@@ -1,18 +1,46 @@
-
-  - item: Overview
+  - item: "Overview"
     url: overview
     bookmarks:
-      - { name: Mark 1, url: mark1 }
-      - { name: Mark 2, url: mark2 }
+      - { name: "Goal", url: goal }
+      - { name: "Philosophy", url: philosophy }
 
-  - item: Styling
-    url: css
+  - item: "Operations"
+    url: operations
     bookmarks:
-      - { name: Mark 1, url: mark1 }
-      - { name: Mark 2, url: mark2 }
+      - { name: "Environments", url: environments }
+      - { name: "Servers", url: servers }
+      - { name: "Data", url: data }
 
-  - item: Tools
-    url: tools
+  - item: "Version Control"
+    url: dvcs
     bookmarks:
-      - { name: Mark 1, url: mark1 }
-      - { name: Mark 2, url: mark2 }
+      - { name: "Workflow", url: workflow }
+      - { name: "Exclusions", url: exclusions }
+      - { name: "Dependencies", url: dependencies }
+      - { name: "Secrets", url: secrets }
+
+  - item: "Web"
+    url: web
+    bookmarks:
+      - { name: "HTML", url: html }
+      - { name: "Styling", url: styling }
+
+  - item: "Javascript"
+    url: javascript
+    bookmarks:
+      - { name: "Standards & Conventions", url: standards }
+      - { name: "Testing", url: testing }
+      - { name: "Frameworks", url: frameworks }
+
+  - item: "PHP"
+    url: php
+    bookmarks:
+      - { name: "Standards & Conventions", url: standards }
+      - { name: "Testing", url: testing }
+      - { name: "Frameworks", url: frameworks }
+
+  - item: "Static Pages"
+    url: static
+    bookmarks:
+      - { name: "Jekyll", url: jekyll }
+      - { name: "Markdown", url: markdown }
