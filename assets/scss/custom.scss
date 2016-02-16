@@ -250,7 +250,7 @@ footer {
   background-color: lighten( $colorBaseDark, 6% );
   background-image: linear-gradient(lighten( $colorBaseDark, 6% ), $colorBaseDark);
   width: 100%;
-  padding: 12em 0 10em;
+  padding: 5em 0 10em;
   color: $colorBaseLight;
 }
 
@@ -274,6 +274,11 @@ footer p, footer ul, footer ol, footer address {
 
 #footer-links .active a {
   text-decoration: underline;
+}
+
+.copyright p {
+  font-size: 1em;
+  font-weight: 100;
 }
 
 /*****************************************************************************/
