@@ -395,11 +395,9 @@ p.section-label {
 
 @media (max-width: 767px) {
     .col {
-        width: 50%;
-        float: left;
+        width: 49%;
         vertical-align: top;
         padding-left: .8em;
-        border-bottom: 1px dotted lighten( $colorPrimary, 25% );
     }
 }
 
