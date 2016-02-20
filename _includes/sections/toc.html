@@ -13,7 +13,7 @@
                     {% if content.bookmarks %}
                     <ul class="toc-list">
                         {% for bookmark in content.bookmarks %}
-                            <li><a href="/{{ content.url }}/{{ bookmark.url }}">{{ bookmark.name }}</a></li>
+                            <li><a href="/{{ content.url }}{% if bookmark.url %}#{{ bookmark.url }}{% endif %}">{{ bookmark.name }}</a></li>
                         {% endfor %}
                     </ul>
                     {% endif %}
