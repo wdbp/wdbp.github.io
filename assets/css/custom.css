@@ -211,5 +211,6 @@ p.section-label { padding: 8px; font-size: 12px; text-align: center; font-family
   section ul, section ol { padding-left: 12px; }
   .container-narrow { width: auto; margin-right: auto; margin-left: auto; }
   .row { margin-left: 0px; margin-right: 0px; padding: 0 18px 0 18px; } }
+.anchor { padding-top: 60px; margin-top: -50px; }
 
 /*# sourceMappingURL=custom.css.map */
