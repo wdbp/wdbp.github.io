@@ -1,8 +1,8 @@
   - item: "Overview"
     url: overview
     bookmarks:
-      - { name: "Goal", url: goal }
-      - { name: "Philosophy", url: philosophy }
+      - { name: "Mission", url: mission }
+      - { name: "Purpose", url: purpose }
 
   - item: "Operations"
     url: operations
