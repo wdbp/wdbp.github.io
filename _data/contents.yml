@@ -1,17 +1,21 @@
-  - item: "Overview"
+  - title: "Overview"
     url: overview
     bookmarks:
       - { name: "Mission", url: mission }
       - { name: "Purpose", url: purpose }
+    next:
+      - { name: "Operations", url: operations }
+    prev:
+      - { name: "Home", url: "" }
 
-  - item: "Operations"
+  - title: "Operations"
     url: operations
     bookmarks:
       - { name: "Environments", url: environments }
       - { name: "Servers", url: servers }
       - { name: "Data", url: data }
 
-  - item: "Version Control"
+  - title: "Version Control"
     url: dvcs
     bookmarks:
       - { name: "Workflow", url: workflow }
@@ -19,27 +23,27 @@
       - { name: "Dependencies", url: dependencies }
       - { name: "Secrets", url: secrets }
 
-  - item: "Web"
+  - title: "Web"
     url: web
     bookmarks:
       - { name: "HTML", url: html }
       - { name: "Styling", url: styling }
 
-  - item: "Javascript"
+  - title: "Javascript"
     url: javascript
     bookmarks:
       - { name: "Standards & Conventions", url: standards }
       - { name: "Testing", url: testing }
       - { name: "Frameworks", url: frameworks }
 
-  - item: "PHP"
+  - title: "PHP"
     url: php
     bookmarks:
       - { name: "Standards & Conventions", url: standards }
       - { name: "Testing", url: testing }
       - { name: "Frameworks", url: frameworks }
 
-  - item: "Static Pages"
+  - title: "Static Pages"
     url: static
     bookmarks:
       - { name: "Jekyll", url: jekyll }
