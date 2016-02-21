@@ -242,6 +242,12 @@ pre {
     background-color: $colorHighlightPrimary;
     border-color: darken( $colorHighlightPrimary, 38% );
 }
+
+.btn-lg {
+    padding: .5em 1em;
+    font-size: 1.5em;
+    line-height: 1.8em;
+}
 /*****************************************************************************/
 /* footer
 /*****************************************************************************/

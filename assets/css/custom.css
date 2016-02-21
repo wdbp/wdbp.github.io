@@ -75,6 +75,8 @@ pre { display: block; padding: 0.7em; margin: 0; font-size: 0.9em; line-height: 
 
 .btn-default:hover { background-color: #42dca3; border-color: #0e4e36; }
 
+.btn-lg { padding: .5em 1em; font-size: 1.5em; line-height: 1.8em; }
+
 /*****************************************************************************/
 /* footer
 /*****************************************************************************/
