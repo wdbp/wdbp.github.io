@@ -370,6 +370,19 @@ p.section-label {
     font-family: $fontPrintPrimary;
 }
 
+
+@media (max-width: 767px) {
+  #page-header-banner h1 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 640px) {
+  #page-header-banner h1 {
+    font-size: 3em;
+  }
+}
+
 #toc-banner {
     background-color: lighten( $colorPrimary, 50% );
     background-image: linear-gradient( lighten( $colorPrimary, 25% ), lighten( $colorPrimary, 50% ) );
@@ -414,6 +427,25 @@ p.section-label {
         border-right: none;
         border-bottom: 1px dotted lighten( $colorPrimary, 25% );
     }
+}
+
+#navigator-banner {
+    background-color: lighten( $colorPrimary, 20% );
+    background-image: linear-gradient( lighten( $colorPrimary, 20% ), lighten( $colorPrimary, 50% ) );
+    padding: 1em 0 1em;
+}
+
+#navigator-banner .prev-link {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+#navigator-banner .next-link {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: right;
+    margin: 0;
 }
 
 @media (max-width: 767px) {
