@@ -1,0 +1,32 @@
+{% for content in site.data.contents %}
+    {% if page.title == content.title %}
+
+    <div id="navigator-banner">
+
+        <div class="container">
+            <div class="row">
+
+                    <div class="col-xs-6">
+
+                        {% if content.prev %}
+                            {% for item in content.prev %}
+                                <p class="prev-link"><a href="/{{ item.url }}">&laquo; {{ item.name }}</a></p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+
+                    <div class="col-xs-6">
+                        {% if content.next %}
+                            {% for item in content.next %}
+                                <p class="next-link"><a href="/{{ item.url }}">{{ item.name }} &raquo;</a></p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+
+    </div><!-- /#navigator-banner -->
+
+    {% endif %}
+{% endfor %}
