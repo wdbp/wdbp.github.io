@@ -10,7 +10,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <span class="hidden-xs">{{ site.title }}</span>
+        <span class="hidden-sm hidden-md hidden-lg">{{ site.shortTitle }}</span>
+      </a>
     </div><!-- ./navbar-header -->
 
     <div class="collapse navbar-collapse">
