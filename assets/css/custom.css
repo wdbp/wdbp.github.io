@@ -61,6 +61,8 @@ a:visited { color: #42dca3; }
 
 ul.dropdown-menu > li > a:hover { color: #fdfdfd; background-color: #000030; }
 
+.navbar-toggle { border-radius: 0px; }
+
 figure { margin-bottom: 2em; }
 
 pre { display: block; padding: 0.7em; margin: 0; font-size: 0.9em; line-height: 1.42857143; color: #00006d; word-break: break-all; word-wrap: break-word; background-color: #e4e4e4; border: none; border-left: 1.5em solid #bdbdbd; border-radius: 0px; overflow-x: auto; font-family: "Inconsolata", Courier, monospace; font-weight: 100; }
