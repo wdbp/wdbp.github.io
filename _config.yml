@@ -1,9 +1,11 @@
-title: Best Practices
+title: Web Development Best Practices
+shortTitle: WDBP
 email: ""
 description: ""
 baseurl: ""
 url: "http://wdbp.github.io/"
-repo: "https://github.com/dereknutile/best-practices"
+repo: "https://github.com/wdbp"
+contact: '<a href="http://dereknutile.com/" target="_blank">Derek Nutile</a>'
 
 # twitter_username: jekyllrb
 # github_username:  jekyll
