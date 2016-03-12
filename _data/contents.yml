@@ -14,6 +14,10 @@
       - { name: "Environments", url: environments }
       - { name: "Servers", url: servers }
       - { name: "Data", url: data }
+    next:
+      - { name: "Version Control", url: dvcs }
+    prev:
+      - { name: "Overview", url: overview }
 
   - title: "Version Control"
     url: dvcs
@@ -22,12 +26,20 @@
       - { name: "Exclusions", url: exclusions }
       - { name: "Dependencies", url: dependencies }
       - { name: "Secrets", url: secrets }
+    next:
+      - { name: "Web", url: web }
+    prev:
+      - { name: "Overview", url: overview }
 
   - title: "Web"
     url: web
     bookmarks:
       - { name: "HTML", url: html }
       - { name: "Styling", url: styling }
+    next:
+      - { name: "Javascript", url: javascript }
+    prev:
+      - { name: "Version Control", url: dvcs }
 
   - title: "Javascript"
     url: javascript
@@ -35,6 +47,10 @@
       - { name: "Standards & Conventions", url: standards }
       - { name: "Testing", url: testing }
       - { name: "Frameworks", url: frameworks }
+    next:
+      - { name: "PHP", url: php }
+    prev:
+      - { name: "Web", url: web }
 
   - title: "PHP"
     url: php
@@ -42,9 +58,17 @@
       - { name: "Standards & Conventions", url: standards }
       - { name: "Testing", url: testing }
       - { name: "Frameworks", url: frameworks }
+    next:
+      - { name: "Static Pages", url: static }
+    prev:
+      - { name: "Javascript", url: javascript }
 
   - title: "Static Pages"
     url: static
     bookmarks:
       - { name: "Jekyll", url: jekyll }
       - { name: "Markdown", url: markdown }
+    next:
+      - { name: "Home", url: "/" }
+    prev:
+      - { name: "PHP", url: php }
