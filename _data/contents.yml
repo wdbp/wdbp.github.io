@@ -27,11 +27,11 @@
       - { name: "Dependencies", url: dependencies }
       - { name: "Secrets", url: secrets }
     next:
-      - { name: "Web", url: web }
+      - { name: "Web Standards", url: web }
     prev:
       - { name: "Overview", url: overview }
 
-  - title: "Web"
+  - title: "Web Standards"
     url: web
     bookmarks:
       - { name: "HTML", url: html }
@@ -50,7 +50,7 @@
     next:
       - { name: "PHP", url: php }
     prev:
-      - { name: "Web", url: web }
+      - { name: "Web Standards", url: web }
 
   - title: "PHP"
     url: php
