@@ -126,6 +126,10 @@ a:visited { color: $colorHighlightPrimary; }
   font-size: 26px;
 }
 
+.navbar-brand>img {
+    display: inline-block;
+}
+
 #nav-links {
   font-size: 14px;
   font-weight: 100;
@@ -641,6 +645,11 @@ p.section-label {
  background-color: rgba( $colorHighlightPrimary, .8 );
 }
 
+.img-brand {
+  margin-top: -10px;
+  height: 40px;
+  width: 40px;
+}
 
 /*****************************************************************************/
 /* common responsive settings

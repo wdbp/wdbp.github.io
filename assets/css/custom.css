@@ -55,6 +55,8 @@ a:visited { color: #42dca3; }
 
 .navbar-brand { font-weight: 100; font-size: 26px; }
 
+.navbar-brand > img { display: inline-block; }
+
 #nav-links { font-size: 14px; font-weight: 100; }
 
 .dropdown-menu { position: absolute; top: 100%; left: 0; z-index: 1000; display: none; float: left; min-width: 160px; padding: 5px 0; margin: 2px 0 0; font-size: 14px; text-align: left; list-style: none; background-color: #fdfdfd; -webkit-background-clip: padding-box; background-clip: padding-box; border: 1px solid #000030; border-radius: 0px; -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
@@ -215,6 +217,8 @@ p.section-label { padding: 8px; font-size: 12px; text-align: center; font-family
 .hover-div a:hover { color: #fdfdfd; }
 
 .hover-div:hover { transition: background-color 0.8s ease; background-color: rgba(66, 220, 163, 0.8); }
+
+.img-brand { margin-top: -10px; height: 40px; width: 40px; }
 
 /*****************************************************************************/
 /* common responsive settings
