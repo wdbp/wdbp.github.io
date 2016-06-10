@@ -1,56 +1,11 @@
 
 <footer>
-
-  <div class="container container-full horizontal-padding-medium">
-  <div class="row">
-
-  <div class="col-md-3 col-lg-3">
-    <div class="focused-block">
-      <h3>Title</h3>
-      <ul class="list-unstyled">
-        <li><a href="">Placeholder Text</a></li>
-        <li><a href="">Placeholder Text</a></li>
-        <li><a href="">Placeholder Text</a></li>
-      </u>
-    </div><!-- /.focused-block -->
-  </div>
-
-  <div class="col-md-3 col-lg-3">
-    <div class="focused-block">
-      <h3>Title</h3>
-      <ul class="list-unstyled">
-        <li><a href="">Placeholder Text</a></li>
-        <li><a href="">Placeholder Text</a></li>
-        <li><a href="">Placeholder Text</a></li>
-      </u>
-    </div><!-- /.focused-block -->
-  </div>
-
-  <div class="col-md-6 col-lg-6">
-    <div class="focused-block">
-      <h3>Title</h3>
-      <ul class="list-unstyled">
-        <li><a href="">Placeholder Text</a></li>
-        <li><a href="">Placeholder Text</a></li>
-        <li><a href="">Placeholder Text</a></li>
-        <li><a href="">Placeholder Text</a></li>
-        <li><a href="">Placeholder Text</a></li>
-        <li><a href="">Placeholder Text</a></li>
-      </u>
-    </div><!-- /.focused-block -->
-  </div>
-
-  </div><!-- /.row -->
-  </div><!-- /.container -->
-
-  <div class="container copyright">
-  <div class="row footer-section horizontal-padding-medium">
-
-    <p class="text-center">Copyright &copy; {{ site.time | date: '%Y' }} &mdash; {{ site.title }}</p>
-    <p class="text-center">Maintained by {{ site.contact }} here <a href="{{ site.repo }}" target="_blank">{{ site.repo }}</a>.</p>
-
-  </div><!-- /.row -->
-  </div><!-- /.container -->
+    <div class="container container-narrow copyright">
+        <div class="row footer-section horizontal-padding-large">
+            <p>Copyright &copy; {{ site.time | date: '%Y' }} &mdash; {{ site.title }}</p>
+            <p>Maintained by {{ site.contact }} here <a href="{{ site.repo }}" target="_blank">{{ site.repo }}</a>.</p>
+        </div><!-- /.row -->
+    </div><!-- /.container -->
 </footer>
 
 {% include framing/scripts.html %}
