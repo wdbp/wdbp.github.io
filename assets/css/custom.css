@@ -109,7 +109,7 @@ footer p, footer ul, footer ol, footer address { font-size: 18px; line-height: 2
 /*****************************************************************************/
 /* sections
 /*****************************************************************************/
-section { margin: 2em 0 4em; }
+section { margin-top: 3em; margin-bottom: 3em; }
 
 section ul, section ol { padding-left: 36px; }
 
